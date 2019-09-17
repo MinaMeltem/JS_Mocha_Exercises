@@ -31,7 +31,7 @@ function compare ( e1, e2){
     return (e1.toLowerCase() === e2.toLowerCase());
 }
 
-
+//Test
 const arr1 = ['hi', 'howdy', 'bye', 'later', 'hello'];
 const arr2 = ['HI', 'Howdy', 'BYE', 'later', 'HELLO'];
 console.log(objOfMatches(arr1, arr2, compare)); // should log: { hi: 'HI', bye: 'BYE', hello: 'HELLO' }
