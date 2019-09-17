@@ -1,2 +1,9 @@
 # JS_Mocha_Exercises
-Will be filled Later!
+
+## STEPS
+
+1. Dowload and Install Node.js [here](https://www.guru99.com/download-install-node-js.html).
+
+2. Open terminal and navigate project directory
+
+3. Run `node /src/{filename}.js`
