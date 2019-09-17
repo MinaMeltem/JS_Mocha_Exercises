@@ -1,36 +1,37 @@
 /*
-* Construct a function intersection that compares input arrays
+* Question: Construct a function intersection that compares input arrays
 * and returns a new array with elements found in all of the inputs.
-*
-*  === sudo ===
-* construct a function that takes and array
-* iterate through to items , add thm and return single string
+**/
+
+/*  Callback
+    @param1 {Array} arr1 The first array
+    @param1 {Array} arr2 The second array
+    @return {Array}      The array which includes the common elements of input arrays
 */
-function addStr(arr){
-    let newStr = '';
-    for(item in arr){
-        newStr += arr[item] + ",";
-    }
-    return newStr
+function commonItems(arr1, arr2){
+    let output = [];
+    arr1.filter(function(n){if(arr2.includes(n)) output.push(n)});
+    return output;
 }
 
-/* construct another function
-* takes a string, iterate through to chars
-* and them them into an array
-* if char is al
-* */
-//@Param :list of arrays
 function intersection(list){
-    let numbs = list.filter(function(number) {
-        return number > 7;
+    let output = list[0];
+    let counter = 1;
+    if (list.length <= 1) { output = list;}
 
+    while (counter < list.length) {
+        output = commonItems(output, list[counter]);
+        counter++;
+    }
+    return output
 }
-
-
 
 //Test
 const arr1 = [5, 10, 15, 20];
-console.log(addStr(arr1));
-// const arr2 = [15, 88, 1, 5, 7];
-// const arr3 = [1, 10, 15, 5, 20];
-//console.log(intersection([arr1, arr2, arr3])); //should log: [5, 15]
+const arr2 = [15, 88, 1, 5, 7];
+const arr3 = [1, 10, 15, 5, 20];
+const arr4 = [];
+const arr5 = [5,15];
+console.log(commonItems(arr1, arr2));//should log: [5, 15]
+console.log(commonItems(arr1, arr2, arr3 ));//should log: [5, 15]
+console.log(intersection([arr1, arr2, arr3, arr5, arr4])); //should log: []

@@ -1,20 +1,9 @@
 /*
-*Question: Construct a function union that takes an input array of arrays,
+* Question: Construct a function union that takes an input array of arrays,
 * compares each array, and returns a new flat array that contains all elements.
 * If there are duplicate elements, only add it once to the new array.
 * Preserve the order of the elements starting from the first element of the first input array
 * */
-
-
-function union(list){
-    let output = [] ;
-    for (let array = 0; array < list.length;  array++){
-        for(let item in list[array]) {
-           output.push(list[array][item]);
-        }
-    }
-    return unique(output);
-}
 
 // Callback
 function unique(arr){
@@ -26,6 +15,18 @@ function unique(arr){
     }
     return output;
 }
+
+function union(list){
+    let output = [] ;
+    for (let array = 0; array < list.length;  array++){
+        for(let item in list[array]) {
+           output.push(list[array][item]);
+        }
+    }
+    return unique(output);
+}
+
+
 
 //Test
 const arr1 = [5, 10, 15, 20];
