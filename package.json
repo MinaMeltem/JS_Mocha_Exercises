@@ -1,0 +1,23 @@
+{
+  "name": "js_mocha_exercises",
+  "version": "0.1.0",
+  "description": "Mel's JSing around",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinaMeltem/JS_Mocha_Exercises.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MinaMeltem/JS_Mocha_Exercises/issues"
+  },
+  "homepage": "https://github.com/MinaMeltem/JS_Mocha_Exercises#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
