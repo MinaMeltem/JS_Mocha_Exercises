@@ -11,23 +11,23 @@
  * @param callback
  * @returns {boolean}
  */
-function majority(arr, callback) {
+function mjrty(arr, callback) {
 
     let f = 0;
     let t = 0;
-    (arr.reduce(callback,arr[0]))?
+    (arr.reduce(callback,arr[0]))? f++ : t++ ;
     return (f >= t);
 
 }
 
-/**
+/**  Callback
  *
  * @param num {int}
  * @returns {boolean}
  */
-//Callback
+
 const isOdd = function(num) { return num % 2 === 1; };
 
-
-console.log(majority([1, 2, 3, 4, 5], isOdd)); // should log: true
-console.log(majority([2, 3, 4, 5], isOdd)); // should log: false
+//Test
+console.log(mjrty([1, 2, 3, 4, 5], isOdd)); // should log: true
+console.log(mjrty([2, 3, 4, 5], isOdd)); // should log: false
