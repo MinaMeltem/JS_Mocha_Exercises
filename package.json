@@ -1,0 +1,28 @@
+{
+  "name": "js_mocha",
+  "version": "1.0.0",
+  "description": "Code about JavaScript Unit test with Mocha ## STEPS",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinaMeltem/JS_Mocha_Exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinaMeltem/JS_Mocha_Exercises/issues"
+  },
+  "homepage": "https://github.com/MinaMeltem/JS_Mocha_Exercises#readme",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
