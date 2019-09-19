@@ -6,7 +6,7 @@
 * */
 
 /**
- *
+ *®
  * @param arr {Array <int>}
  * @param callback
  * @returns {boolean}
@@ -15,7 +15,7 @@ function majority(arr, callback) {
 
     let f = 0;
     let t = 0;
-    (arr.reduce(callback))? f++ : t++ ;
+    (arr.reduce(callback,arr[0]))?
     return (f >= t);
 
 }
