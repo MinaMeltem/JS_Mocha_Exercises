@@ -1,10 +1,10 @@
 /*
-Question : Construct a function multiMap that will accept two arrays - an array of keys and an array of callbacks.
-multiMap will return an object whose keys match the elements in the array of keys.
-The corresponding values that are assigned to the keys will be arrays consisting of outputs from the array of callbacks,
-where the input to each callback is the key
-*
+* QUESTION : Construct a function multiMap that will accept two arrays - an array of keys and an array of callbacks.
+* multiMap will return an object whose keys match the elements in the array of keys.
+* The corresponding values that are assigned to the keys will be arrays consisting of outputs from the array of callbacks,
+* where the input to each callback is the key
 */
+
 function multiMap(keys , callbacks) {
     let obj = {};
     keys.forEach(function(k) {
