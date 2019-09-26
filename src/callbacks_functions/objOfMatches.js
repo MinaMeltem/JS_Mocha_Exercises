@@ -7,13 +7,12 @@
 * and the element from the second array becomes the corresponding value.
 * */
 
-function objOfMatches(arr1, arr2, callback){
+function objOfMatches(arr1, arr2, callback) {
     let output = {};
     let len ;
     let i = 0;
 
     (arr1 < arr2)? len = arr1.length : len = arr2.length;
-
     while ( i < len) {
 
         if (arr2[i] === arr2[i].toUpperCase()){
@@ -31,7 +30,7 @@ function compare ( e1, e2){
     return (e1.toLowerCase() === e2.toLowerCase());
 }
 
-//Test
+//TEST
 const arr1 = ['hi', 'howdy', 'bye', 'later', 'hello'];
 const arr2 = ['HI', 'Howdy', 'BYE', 'later', 'HELLO'];
 console.log(objOfMatches(arr1, arr2, compare)); // should log: { hi: 'HI', bye: 'BYE', hello: 'HELLO' }
