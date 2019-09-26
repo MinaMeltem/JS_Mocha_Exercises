@@ -26,8 +26,6 @@ function unique(arr){
     return output;
 }
 
-
-
 // TEST
 const arr1 = [5, 10, 15, 20];
 const arr2 = [15, 88, 1, 5, 7];
