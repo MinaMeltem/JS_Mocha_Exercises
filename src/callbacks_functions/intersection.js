@@ -3,13 +3,6 @@
 * and returns a new array with elements found in all of the inputs.
 **/
 
-/*  Callback
-    @param1 {Array} arr1 The first array
-    @param1 {Array} arr2 The second array
-    @return {Array}      The array which includes the common elements of input arrays
-*/
-
-
 function commonItems(arr1, arr2){
     let output = [];
     arr1.filter(function (n) {
