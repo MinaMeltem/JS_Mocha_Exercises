@@ -5,12 +5,6 @@
 * of false returns, majority should return false.
 * */
 
-/**
- *®
- * @param arr {Array <int>}
- * @param callback
- * @returns {boolean}
- */
 function mjrty(arr, callback) {
 
     let f = 0;
@@ -19,12 +13,6 @@ function mjrty(arr, callback) {
     return (f >= t);
 
 }
-
-/**  Callback
- *
- * @param num {int}
- * @returns {boolean}
- */
 
 const isOdd = function(num) { return num % 2 === 1; };
 
