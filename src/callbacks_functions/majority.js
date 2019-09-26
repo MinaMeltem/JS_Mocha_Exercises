@@ -6,12 +6,10 @@
 * */
 
 function mjrty(arr, callback) {
-
     let f = 0;
     let t = 0;
     (arr.reduce(callback,arr[0]))? f++ : t++ ;
     return (f >= t);
-
 }
 
 const isOdd = function(num) { return num % 2 === 1; };
