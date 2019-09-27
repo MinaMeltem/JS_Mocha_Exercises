@@ -1,7 +1,7 @@
 /*
-* Question: Construct a function intersect that compares input arrays
+* QUESTION: Construct a function intersect that compares input arrays
 * and returns a new array with elements found in all of the inputs.
-**/
+*/
 
 function commonItems(arr1, arr2){
     let output = [];
@@ -27,7 +27,7 @@ function commonItems(arr1, arr2){
 
 module.exports = intersect;
 
-//Test
+// TEST
 const arr1 = [5, 10, 15, 20];
 const arr2 = [15, 88, 1, 5, 7];
 const arr3 = [1, 10, 15, 5, 20];
