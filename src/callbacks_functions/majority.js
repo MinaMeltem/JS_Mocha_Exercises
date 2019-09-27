@@ -15,6 +15,6 @@ function mjrty(arr, callback) {
 
 const isOdd = function(num) { return num % 2 === 1; };
 
-//Test
+//TEST
 console.log(mjrty([1, 2, 3, 4, 5], isOdd)); // should log: true
 console.log(mjrty([2, 3, 4, 5], isOdd)); // should log: false
